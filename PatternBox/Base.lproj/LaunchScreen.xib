@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="odc-2A-mD8">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="launchicon.png" translatesAutoresizingMaskIntoConstraints="NO" id="HDh-NK-bSs">
+                    <rect key="frame" x="67" y="228" width="280" height="280"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="HDh-NK-bSs" secondAttribute="height" multiplier="1:1" id="0oS-BY-Xr9"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="cZd-sp-Sc8"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="HDh-NK-bSs" secondAttribute="centerX" id="DA5-0m-b4t"/>
+                <constraint firstAttribute="trailing" secondItem="odc-2A-mD8" secondAttribute="trailing" id="FfR-xJ-p3d"/>
+                <constraint firstItem="odc-2A-mD8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="IHO-9r-wqD"/>
+                <constraint firstAttribute="centerY" secondItem="HDh-NK-bSs" secondAttribute="centerY" id="Kf5-v6-1Jd"/>
+                <constraint firstItem="HDh-NK-bSs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="67" id="eWr-Bz-I8K"/>
+                <constraint firstItem="odc-2A-mD8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mbz-Ww-cUs"/>
+                <constraint firstAttribute="bottom" secondItem="odc-2A-mD8" secondAttribute="bottom" id="wvr-NH-Ktb"/>
+                <constraint firstAttribute="trailing" secondItem="HDh-NK-bSs" secondAttribute="trailing" constant="67" id="yzf-Cl-eMU"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="launchicon.png" width="516" height="516"/>
+    </resources>
+</document>
